@@ -28,6 +28,12 @@
     # '-33.8674869,151.2069902'
 """
 
+def lat_lng_2_latitude_longitude(input_dict):
+    # Convert the dictionary with 'lat' and 'lng' to 'latitude' and 'longitude'
+    return {
+        "latitude": input_dict.get("lat"),
+        "longitude": input_dict.get("lng")
+    }
 
 def format_float(arg):
     """Formats a float value to be as short as possible.
